@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student ID Card Generator</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/card.css">
+</head>
+<body>
+
+<div class="container">
+  <p class="eyebrow">Campus Identity Services</p>
+  <h1>Student ID Card Generator</h1>
+  <p class="sub">Fill in the details below to generate a printable ID card.</p>
+
+  <form id="studentForm">
+
+    <div class="input-box">
+      <label for="collegeName">College Name</label>
+      <input type="text" id="collegeName" placeholder="Enter College Name" required>
+    </div>
+
+    <div class="input-box">
+      <label for="collegeLogo">College Logo</label>
+      <input type="file" id="collegeLogo" accept="image/*">
+    </div>
+
+    <div class="input-box">
+      <label for="photo">Student Photo</label>
+      <input type="file" id="photo" accept="image/*" required>
+    </div>
+
+    <div class="input-box">
+      <label for="name">Student Name</label>
+      <input type="text" id="name" placeholder="Enter Student Name" required>
+    </div>
+
+    <div class="input-box">
+      <label for="roll">Roll Number</label>
+      <input type="text" id="roll" placeholder="Enter Roll Number" required>
+    </div>
+
+    <div class="input-box">
+      <label for="department">Department</label>
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option>Computer Technology</option>
+        <option>Information Technology</option>
+        <option>Mechanical Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Electrical Engineering</option>
+        <option>Electronics Engineering</option>
+      </select>
+    </div>
+
+    <div class="input-box">
+      <label for="year">Year</label>
+      <select id="year" required>
+        <option value="">Select Year</option>
+        <option>First Year</option>
+        <option>Second Year</option>
+        <option>Third Year</option>
+      </select>
+    </div>
+
+    <div class="input-box">
+      <label for="blood">Blood Group</label>
+      <select id="blood" required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+      </select>
+    </div>
+
+    <div class="input-box">
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+    </div>
+
+    <div class="input-box">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter Email Address">
+    </div>
+
+    <div class="input-box">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" required>
+    </div>
+
+    <div class="input-box">
+      <label for="address">Address</label>
+      <textarea id="address" rows="4" placeholder="Enter Address" required></textarea>
+    </div>
+
+    <button type="submit">Generate ID Card</button>
+
+  </form>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

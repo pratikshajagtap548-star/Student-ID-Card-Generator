@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student ID Card</title>
+<link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+
+<div class="page">
+
+  <div class="idcard" id="card">
+    <div class="shine"></div>
+
+    <div class="header">
+      <img id="collegeLogo" class="logo" alt="College Logo">
+      <h1 id="cardCollegeName">College Name</h1>
+      <p class="addr">Student Identity Card</p>
+    </div>
+
+    <div class="photo-wrap">
+      <div class="photo-ring">
+        <img id="studentPhoto" alt="Student Photo">
+      </div>
+    </div>
+
+    <div class="body">
+      <h2 class="name" id="name"></h2>
+      <p class="role" id="department"></p>
+
+      <dl class="details">
+        <dt>Roll No.</dt><dd id="roll"></dd>
+        <dt>Year</dt><dd id="year"></dd>
+        <dt>Blood Group</dt><dd id="blood"></dd>
+        <dt>Mobile</dt><dd id="mobile"></dd>
+        <dt>Email</dt><dd id="email"></dd>
+        <dt>DOB</dt><dd id="dob"></dd>
+        <dt>Address</dt><dd id="address"></dd>
+      </dl>
+
+      <div class="barcode"></div>
+      <p class="barcode-label" id="barcodeLabel"></p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="window.print()">Print ID Card</button>
+    <button id="downloadBtn">Download PDF</button>
+    <button onclick="window.location.href='index.html'">Back</button>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="../js/card.js"></script>
+</body>
+</html>
